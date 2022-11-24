@@ -1,0 +1,104 @@
+body {
+    margin: 0%;
+}
+.wrapper {
+    background-color: rgb(110, 230, 67);
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        background-color: aqua;
+        height: fit-content;
+    }
+
+    .logo > img {
+        width: 350px;
+    }
+
+    #nav-bar > ul {
+        list-style-type: none;
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+        color: aliceblue;
+        background-color: aqua;
+        width: 500px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.sec1 {
+    display: grid;
+    grid-template-rows: auto auto;
+    // flex-direction: column;
+    justify-content: center;
+    border: solid 2px sandybrown;
+    margin: auto;
+    gap: 30px;
+    
+    .head1 {
+        margin: 30px;
+        font-size: 30px;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+
+    form {
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        // flex-direction: column;
+        gap: 30px;
+        
+        #email {
+            width: 290px;
+            outline: blueviolet;
+        }
+
+        #btn {
+            width: fit-content;
+            margin: auto;
+        }
+    }
+}
+
+.container {
+    margin: auto;
+    border: solid 2px sandybrown;
+    
+    .sec2 {
+        border: solid 2px rgb(255, 8, 123);
+        width: 50%;
+        margin: auto;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-template-rows: auto;
+        // gap: 12px;
+        // column-gap: 2px;
+        // grid-row-gap: 2em;
+        // justify-content: space-between;
+    }
+    
+    .icon {
+        // width: 100px;
+        border: solid 2px rgb(96, 244, 195);
+        color: rgb(255, 204, 0);
+        margin-bottom: 2em;
+    }
+    
+    .desc {
+        border: solid 2px rgb(172, 96, 244);
+        padding: 0 6% 0 6%;
+        margin-bottom: 2em;
+    }
+
+    .sec3 {
+        margin: auto;
+        border: rgb(255, 204, 0) 2px solid;
+        width: fit-content;
+        margin-top: 8px;
+    }
+}
