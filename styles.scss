@@ -1,6 +1,6 @@
-html {
-    box-sizing: border-box;
-}
+// html {
+//     box-sizing: border-box;
+// }
 
 body {
     margin: 0%;
@@ -53,11 +53,12 @@ body {
 }
 
 .sec1 {
+    padding-top: 11px;
     display: grid;
     grid-template-rows: auto auto;
     // flex-direction: column;
     justify-content: center;
-    // border: solid 2px sandybrown;
+    border: solid 2px sandybrown;
     margin: auto;
     gap: 30px;
     
