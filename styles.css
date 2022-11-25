@@ -31,15 +31,15 @@ body {
   text-decoration: none;
   color: black;
 }
-.wrapper .nav-link > a:hover {
+.wrapper #nav-bar > ul .nav-link > a:hover {
   text-decoration: underline;
+  color: rgb(230, 193, 154);
 }
 
 .sec1 {
   display: grid;
   grid-template-rows: auto auto;
   justify-content: center;
-  border: solid 2px sandybrown;
   margin: auto;
   gap: 30px;
 }
@@ -72,7 +72,7 @@ body {
 .container {
   margin: auto;
   border: solid 2px sandybrown;
-  background-color: rgb(226, 203, 184);
+  background-color: rgb(234, 208, 187);
 }
 .container .sec2 {
   border: solid 2px rgb(255, 8, 123);
