@@ -228,6 +228,7 @@ footer p {
   #pricing .products {
     border: rgb(0, 0, 0) 2px solid;
     width: 68%;
+    margin: auto;
     display: grid;
     gap: 10px;
     grid-template-rows: auto auto auto;
