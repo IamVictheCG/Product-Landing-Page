@@ -67,6 +67,13 @@ body {
   margin-bottom: 12px;
   background-color: rgb(228, 207, 17);
   color: rgb(255, 255, 255);
+  outline: none;
+}
+.sec1 form #btn:hover {
+  border: 2px solid rgb(234, 208, 187);
+  cursor: pointer;
+  color: black;
+  outline: white;
 }
 
 .container {
@@ -74,7 +81,6 @@ body {
   background-color: rgb(234, 208, 187);
 }
 .container .sec2 {
-  border: solid 2px rgb(255, 8, 123);
   width: 70%;
   margin: auto;
 }
@@ -94,13 +100,12 @@ body {
 .container .sect4 {
   margin: auto;
   width: 70%;
-  margin-top: 8px;
+  margin-top: 28px;
   display: grid;
   grid-template-columns: 30% 30% 30%;
   gap: 5%;
 }
 .container .sect4 .products {
-  border: rgb(72, 59, 6) 2px solid;
   display: grid;
   gap: 10px;
   grid-template-rows: auto;
