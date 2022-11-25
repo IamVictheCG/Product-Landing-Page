@@ -1,15 +1,15 @@
 body {
   margin: 0%;
+  background-color: rgb(237, 230, 224);
 }
 
 .wrapper {
-  background-color: rgb(110, 230, 67);
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
 }
 .wrapper .logo {
-  background-color: aqua;
+  margin-top: 10px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -20,12 +20,19 @@ body {
 .wrapper #nav-bar > ul {
   list-style-type: none;
   font-size: larger;
+  font-weight: 500;
   font-family: "Times New Roman", Times, serif;
-  color: aliceblue;
-  background-color: aqua;
+  color: rgb(14, 15, 16);
   width: 500px;
   display: flex;
   justify-content: space-evenly;
+}
+.wrapper #nav-bar > ul a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper .nav-link > a:hover {
+  text-decoration: underline;
 }
 
 .sec1 {
@@ -57,11 +64,15 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
+  margin-bottom: 12px;
+  background-color: rgb(228, 207, 17);
+  color: rgb(255, 255, 255);
 }
 
 .container {
   margin: auto;
   border: solid 2px sandybrown;
+  background-color: rgb(226, 203, 184);
 }
 .container .sec2 {
   border: solid 2px rgb(255, 8, 123);
@@ -121,4 +132,24 @@ body {
   width: fit-content;
   margin: auto;
   margin-bottom: 10px;
+  background-color: rgb(228, 207, 17);
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  background-color: rgb(89, 92, 92);
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: bolder;
+}
+footer p {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgb(14, 15, 14);
 }/*# sourceMappingURL=styles.css.map */

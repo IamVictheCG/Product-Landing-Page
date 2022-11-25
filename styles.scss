@@ -1,14 +1,14 @@
 body {
     margin: 0%;
+    background-color: rgb(237, 230, 224);
 }
 .wrapper {
-    background-color: rgb(110, 230, 67);
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
 
     .logo {
-        background-color: aqua;
+        margin-top: 10px;
         height: fit-content;
     }
 
@@ -19,13 +19,24 @@ body {
     #nav-bar > ul {
         list-style-type: none;
         font-size: larger;
+        font-weight: 500;
         font-family: 'Times New Roman', Times, serif;
-        color: aliceblue;
-        background-color: aqua;
+        color: rgb(14, 15, 16);
+        // background-color: aqua;
         width: 500px;
         display: flex;
         justify-content: space-evenly;
+
+        a {
+            text-decoration: none;
+            color: black;
+
+        }
     }
+
+    .nav-link > a:hover {
+            text-decoration: underline;
+        }
 }
 
 .sec1 {
@@ -59,6 +70,9 @@ body {
         #btn {
             width: fit-content;
             margin: auto;
+            margin-bottom: 12px;
+            background-color: rgb(228, 207, 17);
+            color: rgb(255, 255, 255);
         }
     }
 }
@@ -66,6 +80,7 @@ body {
 .container {
     margin: auto;
     border: solid 2px sandybrown;
+    background-color: rgb(226, 203, 184);
     
     .sec2 {
         border: solid 2px rgb(255, 8, 123);
@@ -138,7 +153,27 @@ body {
                 width: fit-content;
                 margin: auto;
                 margin-bottom: 10px;
+                background-color: rgb(228, 207, 17);
+                color: rgb(255, 255, 255);
             }
         }
+    }
+}
+
+footer {
+    background-color: rgb(89, 92, 92);
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    p {
+        margin: auto;
+        width: fit-content;
+        color: rgb(14, 15, 14);
     }
 }
