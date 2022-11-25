@@ -1,3 +1,7 @@
+html {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0%;
     background-color: rgb(237, 230, 224);
@@ -6,9 +10,10 @@ body {
     background-color: rgb(237, 230, 224);
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
-    position: sticky;
+    // flex-direction: row-reverse;
+    position: fixed;
     top: 0;
+    width: 100%;
 
     .logo {
         margin-top: 10px;
@@ -16,7 +21,7 @@ body {
     }
 
     .logo > img {
-        width: 100%;
+        width: 430px;
     }
 
     #nav-bar > ul {
@@ -27,6 +32,9 @@ body {
         color: rgb(14, 15, 16);
         // background-color: aqua;
         width: 500px;
+        height: 50px;
+        // padding-top: 20px;
+        margin: 0;
         display: flex;
         justify-content: space-evenly;
 
@@ -35,7 +43,7 @@ body {
             color: black;
 
         }
-        .nav-link > a:hover {
+        a:hover {
             text-decoration: underline;
             color: rgb(230, 193, 154);
         }
@@ -71,7 +79,7 @@ body {
             outline: blueviolet;
         }
 
-        #btn {
+        #submit {
             width: fit-content;
             margin: auto;
             margin-bottom: 12px;
@@ -79,7 +87,7 @@ body {
             color: rgb(255, 255, 255);
             outline: none;
         }
-        #btn:hover {
+        #submit:hover {
             border: 2px solid rgb(234, 208, 187);
             cursor: pointer;
             color: black;
@@ -204,15 +212,107 @@ footer {
     }
 }
 
-@media (max-width: 500px) {
-    .sect4 {
-        margin: auto;
-        border: rgb(255, 204, 0) 2px solid;
-        width: 70%;
-        margin-top: 28px;
-        display: grid;
-        grid-template-columns: auto;
-        grid-auto-rows: minmax(170px, auto);
-        gap: 5%;
+@media (max-width: 600px) {
+    .wrapper {
+        background-color: rgb(237, 230, 224);
+        // border: aqua solid 2px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    
+        .logo {
+            margin-top: 10px;
+            height: fit-content;
+        }
+    
+        .logo{
+            width: 100px;
+            // border: rgb(16, 174, 39) solid 2px            
+        }
+
+    
+        #nav-bar > ul {
+            list-style-type: none;
+            font-size: larger;
+            font-weight: 500;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(14, 15, 16);
+            // background-color: aqua;
+            width: 500px;
+            display: flex;
+            justify-content: space-evenly;
+    
+            a {
+                text-decoration: none;
+                color: black;
+    
+            }
+            a:hover {
+                text-decoration: underline;
+                color: rgb(230, 193, 154);
+            }
+        }
+    
     }
+
+    #pricing {
+        margin: auto;
+        border: rgb(9, 210, 140) 2px solid;
+        width: 100%;
+        display: flex;
+        grid-template-rows: auto auto auto;
+        grid-auto-rows: minmax(100px, auto);
+
+        .products {
+            border: rgb(0, 0, 0) 2px solid;          
+            display: grid;
+            // justify-content: center;
+            gap: 10px;
+            grid-template-rows: auto auto auto;
+            grid-auto-rows: minmax(100, auto);
+            // grid-auto-columns: minmax(100, auto);
+            background-color: rgb(125, 122, 118);
+    
+            .i-name {
+                width: 100%;
+                font-size: 100%;
+                font-weight: 800;
+                text-align: center;
+                background-color: rgb(134, 134, 127);
+    
+            }
+    
+            .props {
+                text-align: center;
+                font-size: 1em;
+            }
+    
+            .pricing {
+                text-align: center;
+                font-size: 25px;
+                font-weight: 800;
+    
+            }
+    
+            .btn {
+                padding: 0 4px 0 4px;
+                width: fit-content;
+                margin: auto;
+                margin-bottom: 10px;
+                background-color: rgb(228, 207, 17);
+                color: rgb(255, 255, 255);
+            }
+            .btn:hover {
+                border: 2px solid white;
+                cursor: pointer;
+                color: black;
+                // outline: white;
+            }
+        }
+    }
+
+    
 }
