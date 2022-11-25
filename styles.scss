@@ -113,11 +113,20 @@ body {
 
             .i-name {
                 width: 100%;
+                font-size: 25px;
                 text-align: center;
                 background-color: rgb(134, 134, 127);
             }
 
-            .props
+            .props {
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .pricing {
+                text-align: center;
+                font-size: 25px;
+            }
         }
     }
 }

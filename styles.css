@@ -99,6 +99,15 @@ body {
 }
 .container .sect4 .products .i-name {
   width: 100%;
+  font-size: 25px;
   text-align: center;
   background-color: rgb(134, 134, 127);
+}
+.container .sect4 .products .props {
+  text-align: center;
+  font-size: 25px;
+}
+.container .sect4 .products .pricing {
+  text-align: center;
+  font-size: 25px;
 }/*# sourceMappingURL=styles.css.map */
