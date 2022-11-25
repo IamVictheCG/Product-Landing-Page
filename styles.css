@@ -4,9 +4,13 @@ body {
 }
 
 .wrapper {
+  background-color: rgb(237, 230, 224);
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .wrapper .logo {
   margin-top: 10px;
@@ -15,7 +19,7 @@ body {
   height: fit-content;
 }
 .wrapper .logo > img {
-  width: 350px;
+  width: 100%;
 }
 .wrapper #nav-bar > ul {
   list-style-type: none;
@@ -78,6 +82,7 @@ body {
 
 .container {
   margin: auto;
+  margin-bottom: 0;
   background-color: rgb(234, 208, 187);
 }
 .container .sec2 {
@@ -97,6 +102,12 @@ body {
   padding: 0 6% 0 6%;
   margin-bottom: 2em;
 }
+.container .sec3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
 .container .sect4 {
   margin: auto;
   width: 70%;
@@ -106,13 +117,15 @@ body {
   gap: 5%;
 }
 .container .sect4 .products {
+  border: rgb(0, 0, 0) 2px solid;
   display: grid;
   gap: 10px;
   grid-template-rows: auto;
+  background-color: rgb(125, 122, 118);
 }
 .container .sect4 .products .i-name {
   width: 100%;
-  font-size: 22px;
+  font-size: 100%;
   font-weight: 800;
   text-align: center;
   background-color: rgb(134, 134, 127);
@@ -136,9 +149,15 @@ body {
   background-color: rgb(228, 207, 17);
   color: rgb(255, 255, 255);
 }
+.container .sect4 .products .btn:hover {
+  border: 2px solid white;
+  cursor: pointer;
+  color: black;
+}
 
 footer {
   background-color: rgb(89, 92, 92);
+  margin: 0px;
 }
 footer ul {
   display: flex;
@@ -152,5 +171,18 @@ footer p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: rgb(14, 15, 14);
+  color: rgb(240, 240, 240);
+}
+
+@media (max-width: 500px) {
+  .sect4 {
+    margin: auto;
+    border: rgb(255, 204, 0) 2px solid;
+    width: 70%;
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: minmax(170px, auto);
+    gap: 5%;
+  }
 }/*# sourceMappingURL=styles.css.map */

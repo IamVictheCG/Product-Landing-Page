@@ -3,9 +3,12 @@ body {
     background-color: rgb(237, 230, 224);
 }
 .wrapper {
+    background-color: rgb(237, 230, 224);
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    position: sticky;
+    top: 0;
 
     .logo {
         margin-top: 10px;
@@ -13,7 +16,7 @@ body {
     }
 
     .logo > img {
-        width: 350px;
+        width: 100%;
     }
 
     #nav-bar > ul {
@@ -88,6 +91,7 @@ body {
 
 .container {
     margin: auto;
+    margin-bottom: 0;
     // border: solid 2px sandybrown;
     background-color: rgb(234, 208, 187);
     
@@ -120,6 +124,11 @@ body {
         margin-bottom: 2em;
     }
 
+    .sec3 {
+        width: fit-content;
+        margin: auto;
+    }
+
     .sect4 {
         margin: auto;
         // border: rgb(255, 204, 0) 2px solid;
@@ -130,15 +139,16 @@ body {
         gap: 5%;
         
         .products {
-            // border: rgb(72, 59, 6) 2px solid;            
+            border: rgb(0, 0, 0) 2px solid;          
             display: grid;
             // justify-content: center;
             gap: 10px;
             grid-template-rows: auto;
+            background-color: rgb(125, 122, 118);
 
             .i-name {
                 width: 100%;
-                font-size: 22px;
+                font-size: 100%;
                 font-weight: 800;
                 text-align: center;
                 background-color: rgb(134, 134, 127);
@@ -165,12 +175,19 @@ body {
                 background-color: rgb(228, 207, 17);
                 color: rgb(255, 255, 255);
             }
+            .btn:hover {
+                border: 2px solid white;
+                cursor: pointer;
+                color: black;
+                // outline: white;
+            }
         }
     }
 }
 
 footer {
     background-color: rgb(89, 92, 92);
+    margin: 0px;
 
     ul {
         display: flex;
@@ -183,6 +200,19 @@ footer {
     p {
         margin: auto;
         width: fit-content;
-        color: rgb(14, 15, 14);
+        color: rgb(240, 240, 240);
+    }
+}
+
+@media (max-width: 500px) {
+    .sect4 {
+        margin: auto;
+        border: rgb(255, 204, 0) 2px solid;
+        width: 70%;
+        margin-top: 28px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: minmax(170px, auto);
+        gap: 5%;
     }
 }
