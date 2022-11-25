@@ -68,7 +68,7 @@ body {
     
     .sec2 {
         border: solid 2px rgb(255, 8, 123);
-        width: 50%;
+        width: 70%;
         margin: auto;
     }
     
@@ -95,10 +95,29 @@ body {
         margin-bottom: 2em;
     }
 
-    .sec3 {
+    .sect4 {
         margin: auto;
         border: rgb(255, 204, 0) 2px solid;
-        width: fit-content;
+        width: 70%;
         margin-top: 8px;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        gap: 5%;
+        
+        .products {
+            border: rgb(72, 59, 6) 2px solid;            
+            display: grid;
+            // justify-content: center;
+            gap: 10px;
+            grid-template-rows: auto;
+
+            .i-name {
+                width: 100%;
+                text-align: center;
+                background-color: rgb(134, 134, 127);
+            }
+
+            .props
+        }
     }
 }
